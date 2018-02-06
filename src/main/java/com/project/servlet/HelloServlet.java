@@ -7,6 +7,7 @@ package com.project.servlet;
 
 
 import com.project.model.HelloClass;
+import com.project.model.HelloClass;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -32,9 +33,13 @@ public class HelloServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        HelloClass message = new HelloClass();
+        HelloClass cl = new HelloClass();
+//        String message = cl.pullMessage(1);
+        String message = "Hello world";
         request.setAttribute("message", message);
         getServletContext().getRequestDispatcher("/Home.jsp").forward(request, response);
+        
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
