@@ -5,6 +5,7 @@
  */
 package com.project.wherethetrash;
 
+import com.project.model.ConnectionBuilder;
 import com.project.model.HelloClass;
 
 /**
@@ -15,5 +16,7 @@ public class test {
     public static void main(String[] args) {
         HelloClass cl = new HelloClass(1, "mymy");
         System.out.println(cl.toString());
+        ConnectionBuilder co =  new ConnectionBuilder();
+       
     }
 }
