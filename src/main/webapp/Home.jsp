@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%--<%@page import="com.project.model.HelloClass"%>--%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,6 +16,7 @@
         <h1>INT206 SOFTWARE PROJECT MANAGEMENT</h1>
 
         <p>" Hello World "</p><br><br><br>
+        <p>Test : <%=request.getAttribute("message")%> </p>
         <img src="Image/world.gif">
     </body>
 </html>
