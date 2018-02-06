@@ -16,7 +16,7 @@ public class test {
     public static void main(String[] args) {
         HelloClass cl = new HelloClass(1, "mymy");
         System.out.println(cl.toString());
-        ConnectionBuilder co =  new ConnectionBuilder();
+        System.out.println(cl.pullMessage(1));
        
     }
 }

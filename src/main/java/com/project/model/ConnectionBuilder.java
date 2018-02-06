@@ -28,7 +28,7 @@ public class ConnectionBuilder {
         Class.forName("com.mysql.jdbc.Driver") ;
         System.out.println("Driver loaded success");
         String url = "jdbc:mysql://13.250.3.218:3306/WhereTheTrash";
-        Connection conn = DriverManager.getConnection(url,"root","1234");
+        Connection conn = DriverManager.getConnection(url,"wherethetrash","wherethetrash");
         System.out.println("Connected");
         return conn;
     }
