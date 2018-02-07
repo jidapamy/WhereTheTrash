@@ -1,20 +1,39 @@
 body {
-    background-color: #b4e4cd;
+    background-color: #F3D8C7;
 }
 
 h1 {
     text-align: center;
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Amatic SC', cursive;
     margin-top: 5%;
+    font-size: 70px;
+    color: #302A28;
 }
 
 p {
-    font-family: "Courier New", Courier, monospace;
+    font-family: 'Amatic SC', cursive;
     text-align: center;
-    font-size: 50px;
+    font-size: 55px;
 }
 
 img{
-	margin-left: 37%;
+    margin-left: 36%;
 }
 
+.sq1{
+    background-color:	#D0B8AC;
+    margin: 5%;
+    border-radius: 10%;
+}
+
+.sq2{
+    background-color:	#EFE5DC;
+    margin: 5%;
+    border-radius: 10%;
+}
+
+.sq{
+    background-color:	#EFE5DC;
+    margin: 5%;
+    border-radius: 10%;
+}
