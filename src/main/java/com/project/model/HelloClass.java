@@ -27,6 +27,10 @@ public class HelloClass {
         this.id = id;
         this.message = message;
     }
+    
+    public HelloClass(int id){
+        this.id = id;
+    }
 
     public int getId() {
         return id;
@@ -69,7 +73,7 @@ public class HelloClass {
         
         return message;
     }
-
+    
     @Override
     public String toString() {
         return "HelloClass{" + "id=" + id + ", message=" + message + '}';

@@ -24,6 +24,7 @@ public class ConnectionBuilder {
 
     Connection conn = null;
     static String test = "";
+
     public static Connection getMySqlCond() throws ClassNotFoundException, SQLException {
         Connection conn = null;
         ClassLoader classloader = Thread.currentThread().getContextClassLoader();
@@ -35,32 +36,18 @@ public class ConnectionBuilder {
             String dbuser = prop.getProperty("dbuser");
             String dbpassword = prop.getProperty("dbpassword");
 
-            test = "url:"+dburl +", dbuser:"+dbuser+", dbpassword:"+ dbpassword;
+            test = "url:" + dburl + ", dbuser:" + dbuser + ", dbpassword:" + dbpassword;
 
-            Class.forName("com.mysql.jdbc.Driver") ;
+            Class.forName("com.mysql.jdbc.Driver");
             System.out.println("Driver loaded success");
-            
-            conn = DriverManager.getConnection(dburl,dbuser,dbpassword);
+
+            conn = DriverManager.getConnection(dburl, dbuser, dbpassword);
             System.out.println("Connected");
-            
+
         } catch (IOException ex) {
             Logger.getLogger(ConnectionBuilder.class.getName()).log(Level.SEVERE, null, ex);
         }
         return conn;
     }
 
-    public static void main(String[] args) {
-        Connection con;
-        try {
-            con = ConnectionBuilder.getMySqlCond();
-            System.out.println(con);
-            System.out.println(">>>"+test);
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(ConnectionBuilder.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
-            Logger.getLogger(ConnectionBuilder.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
-    }
-    
 }
