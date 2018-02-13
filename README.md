@@ -1,7 +1,8 @@
-# Where The Trash
+# HelloWorldProject
+### Where The Trash
 INT206 Software Process Management Project  
-Link วิดิโอการทำงานของระบบ :  
-Link ตัวอย่างของระบบ :   
+Link วิดิโอการทำงานของระบบ : https://youtu.be/1iE4Y0C3NP0  
+Link ตัวอย่างของระบบ : http://13.229.80.1:8080/HelloWorldProject-1.0  
 
 # Getting started
 หลังจากการ Clone Project ลงมาแล้ว ต้องมีการติดตั้งสิ่งที่ต้องใช้ในการ Run Project คือ
