@@ -30,7 +30,9 @@ Download : https://dev.mysql.com/downloads/windows/installer/5.7.html
 เมื่อทำการติดตั้งเสร็จสิ้น ให้เปิดโปรแกรม MySQL Workbench เพื่อใช้งาน
 
 * [MacOS]  
-Download : https://dev.mysql.com/downloads/mysql/  (ที่ Select platform: เลือกเป็น Mac OS X จากนั้นเลือกตัวติดตั้งแบบ dmg)
+Download : https://dev.mysql.com/downloads/mysql/  
+(ที่ Select platform: เลือกเป็น Mac OS X จากนั้นเลือกตัวติดตั้งแบบ dmg)  
+  
 ทำการแก้ไขไฟล์ .bash_profile
 ```bash
 # Add MySQL 
@@ -40,9 +42,9 @@ export PATH=$MYSQL_ROOT/bin:$PATH
 เปิดโปรแกรม terminal แล้วพิมพ์คำสั่ง  
 
 ```bash
-mysql -u root -p ตัว terminal 
+mysql -u root -p
 ```
-จะแสดง Enter password: ให้ใส่ temporary password ที่ได้มา
+ตัว terminal จะแสดง Enter password: ให้ใส่ temporary password ที่ได้มา
 และตั้งค่ารหัสใหม่ โดยใช้คำสั่ง  
 
 ```bash
@@ -53,15 +55,17 @@ SET PASSWORD = PASSWORD('รหัสผ่านที่ต้องการ'
 
 # Config Properties
 สร้างไฟล์ config.properties ใน /src/main/resoures โดยใส่
+
 ```bash
 dburl=${databaseURL}
 dbuser=${databaseUsername}
 dbpassword= ${databasePassword}
 ```
-#Members
-58130500002 นายกษิดิศ ศรีจันทรากูล 
-58130500010 นายคมวัฏ โชติพิพัฒน์วงศ์ 
-58130500014 นางสาวจิดาภา สิกพันธ์ 
-58130500031 นางสาวณิชชรีย์ ศานติวงศ์สกุล 
-58130500040 นางสาวนทภรรตรี บุญธรรม 
-58130500043 นางสาวนฤภร เรืองสาย
+
+# Members
+58130500002 นายกษิดิศ ศรีจันทรากูล  
+58130500010 นายคมวัฏ โชติพิพัฒน์วงศ์  
+58130500014 นางสาวจิดาภา สิกพันธ์  
+58130500031 นางสาวณิชชรีย์ ศานติวงศ์สกุล  
+58130500040 นางสาวนทภรรตรี บุญธรรม  
+58130500043 นางสาวนฤภร เรืองสาย  
